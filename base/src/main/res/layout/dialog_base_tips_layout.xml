@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent">
+
+    <LinearLayout style="@style/Dialog_Base_LinearLayout">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Dialog_Base_TextView_Title"
+            tools:text="asdklfjsdlfskfl" />
+
+        <include layout="@layout/line_gray_horizontal" />
+
+        <com.youyue.base.view.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    style="@style/Dialog_Base_TextView_Content"
+                    tools:text="asdklfjsdlfskfl" />
+            </LinearLayout>
+        </com.youyue.base.view.MyScrollView>
+
+        <include layout="@layout/line_gray_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                style="@style/Dialog_Base_Click_TextView"
+                android:text="@string/base_tips_dialog_cancel" />
+
+            <include layout="@layout/line_gray_vertical" />
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                style="@style/Dialog_Base_Click_TextView"
+                android:text="@string/base_tips_dialog_ok" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

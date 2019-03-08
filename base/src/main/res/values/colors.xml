@@ -1,0 +1,8 @@
+<resources>
+    <color name="base_white">#FFFFFF</color>
+    <color name="base_black">#000000</color>
+    <!--深灰-->
+    <color name="base_gray">#989798</color>
+    <!--浅灰-->
+    <color name="light_gray">#E3E3E3</color>
+</resources>

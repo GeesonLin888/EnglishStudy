@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">base</string>
+
+    <string name="progress_bar_loading">加载中...</string>
+
+    <string name="base_tips_dialog_ok">确认</string>
+    <string name="base_tips_dialog_cancel">取消</string>
+
+</resources>
